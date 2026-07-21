@@ -1,0 +1,21 @@
+
+import 'package:equatable/equatable.dart';
+
+class MovieTabbedEvent extends Equatable{
+
+  const MovieTabbedEvent();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class MovieTabChangeEvent extends MovieTabbedEvent{
+
+  final int currentTabIndex;
+
+  const MovieTabChangeEvent({required this.currentTabIndex});
+
+  @override
+  List<Object?> get props => [currentTabIndex];
+
+}
